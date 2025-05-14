@@ -3,60 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup Form</title>
+  <title>Student Table</title>
 </head>
 <body>
-  <h1>Signup Form</h1>
+  <h1>Student Information</h1>
 
-  <form method="POST">
-    <!-- Name Field -->
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
-
-    <!-- Email Field -->
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-
-    <!-- Gender Field -->
-    <label>Gender</label><br>
-    <input type="radio" id="gender_m" name="gender" value="Male">
-    <label for="gender_m">Male</label>
-    <input type="radio" id="gender_f" name="gender" value="Female">
-    <label for="gender_f">Female</label><br><br>
-
-    <!-- Car Brands Field -->
-    <label for="cars">Car Brands</label>
-    <select id="cars" name="cars" required>
-      <option value="">--Please choose an option--</option>
-      <option value="Toyota">Toyota</option>
-      <option value="Honda">Honda</option>
-      <option value="BMW">BMW</option>
-      <option value="Audi">Audi</option>
-    </select><br><br>
-
-    <!-- Age Field -->
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" placeholder="Age" required><br><br>
-
-    <!-- Date of Birth Field -->
-    <label for="dob">Date of Birth</label>
-    <input type="date" id="dob" name="dob" required><br><br>
-
-    <!-- Phone Number Field -->
-    <label for="tel">Phone Number</label>
-    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br><br>
-
-    <!-- Password Field -->
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Password" required><br><br>
-
-    <!-- TOS Checkbox -->
-    <label for="tos">
-      <input type="checkbox" id="tos" name="tos" required> I agree to the TOS
-    </label><br><br>
-
-    <!-- Submit Button -->
-    <button type="submit">Submit</button>
-  </form>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Roll number</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>John Doe</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Jane Smith</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
